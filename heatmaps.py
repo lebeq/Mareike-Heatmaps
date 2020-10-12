@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#Import data from CSV File, supply path as str
+#Import data from CSV File, CHANGE PATH
 data_raw = np.genfromtxt('D:/g/Downloads/HT_pos.csv', delimiter=',', skip_header=1)
 
 #Uncomment apropriate Filename for the heatmap to be saved under
@@ -29,7 +29,7 @@ for _, spine in ax.spines.items():
     spine.set_visible(True)
 
 
-#save output to specified File, tightlayout cuts the whitespaces around
+#save output to specified File (CHANGE PATH), tightlayout cuts the whitespaces around
 plt.savefig(f'C:/Python Projects/heatmaps/{filename}.png', dpi=1200)
 plt.tight_layout()
 plt.show()
